@@ -1,0 +1,84 @@
+<section id="footer" class="section bg-black padding-7">
+  <div class="row">
+    <div class="row text-center" style="" >
+      <div class="col-md-12">
+                    <h1 style="color:white">Office locations:</h1>
+                </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
+              <img src="{{ site.baseurl }}/assets/img/ferizaj.jpg" class="w-100 place_career" alt="">
+              <h5 class="text-center mt-3"  style="color:white">Ferizaj</h5>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
+              <img src="{{ site.baseurl }}/assets/img/prishtina.jpeg" class="w-100 place_career" alt="">
+              <h5 class="text-center mt-3" style="color:white">Prishtinë</h5>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
+              <img src="{{ site.baseurl }}/assets/img/san_francisco.jpeg" class="w-100 place_career" alt="">
+              <h5 class="text-center mt-3"  style="color:white">San Francisco</h5>
+          </div>
+      </div>
+      <div class="col-lg-6 col-md-6 left_footer_grid">
+        <div class="d-flex justify-content-end">
+          {% if page.name == "aboutus.html" %} 
+            <p class="get_in_touch_text_1">Have a project in mind? <br/> Let's work together.</p>
+          {% elsif page.name == "services.html" %}
+            <p class="get_in_touch_text_1">We look forward to <br> hearing from you. <br> Let's see how we can help.</p>
+          {% elsif page.name == "index.html" %}
+            <p class="get_in_touch_text"><strong>Let's get in</strong><br><strong>touch.</strong></p>
+          {% else %}
+            <p class="get_in_touch_text_1">Have a project in mind? <br/> Let's work together.</p>
+          {% endif %}
+        </div>
+        <div class="d-flex justify-content-end pr-5">
+          <img src="{{ site.baseurl }}/assets/img/icon-footer.png" alt=""> 
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6 right_footer_grid">
+          <a href="{{ site.baseurl }}/estimate">
+            {% if page.name == "aboutus.html" %} 
+              Contact us
+            {% elsif page.name == "services.html" %}
+              Book a free consultation
+            {% elsif page.name == "index.html" %}
+              GET AN ESTIMATE OF <br> YOUR PROJECT
+            {% else %}
+              Contact us
+            {% endif %}
+          </a>
+      </div>
+
+  </div>
+
+  <div class="footer-bottom pt-4 pb-4">
+    <div class="row">
+
+      <div class="col-lg-6">
+        <ul class="mb-0">
+          <li class="list-inline-item"><a href="{{ site.baseurl }}/about/">About us</a></li>
+          <li class="list-inline-item"><a href="{{ site.baseurl }}/services/">Services</a></li>
+          <li class="list-inline-item"><a href="{{ site.baseurl }}/insights/">Insights</a></li>
+          <li class="list-inline-item"><a href="{{ site.baseurl }}/careers/">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-6 d-flex">
+        <div class="position-relative back_top_grid">
+          <a class="back_top" >BACK TO TOP</a>
+          <a class="back_top img" ><img src="{{ site.baseurl }}/assets/img/back_top.png" alt=""> </a>
+        </div>
+        <div class="right_bottom_footer_grid">
+          <ul class="mb-0">
+            <li class="list-inline-item"><a href="https://www.facebook.com/incodeks" target="_blank">Facebook</a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/incodeks" target="_blank">Instagram</a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/company/incodeks" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+   

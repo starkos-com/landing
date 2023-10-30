@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta property="og:image" content="http://incodeks.com/assets/img/logo_inc.jpg" />
+    <meta property="og:image:secure_url" content="https://incodeks.com/assets/img/logo_inc.jpg" /> 
+    <meta property="og:image:type" content="image/jpeg" /> 
+    <meta property="og:image:width" content="400" /> 
+    <meta property="og:image:height" content="300" />
+     <meta name="ahrefs-site-verification" content="b3d23b516b33f24b04ea9795da4dad88fc11d8f9b8ce1c7b622cfbb0e2e74e0d">
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{% if page.title == "Incodeks" %}{% else %}Incodeks - {% endif %}{{ site.description }}</title>
+
+    {% include meta.html %}
+ 
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/fonts/font-awesome.min.css">
+    <link href="https://fonts.cdnfonts.com/css/heebo" rel="stylesheet">
+    <script async src="{{ site.baseurl }}/assets/js/amp.js"></script>
+ 
+  </head>
+
+  <body  id="page-top">
+    {% include head.html %}
+      {{ content }}
+    {% if page.footer_type == "footer_2_columns" %} 
+      {% include footer_2_columns.html %}
+    {% elsif page.footer_type=="footer_1_column" %}
+      {% include footer_2_columns.html %}
+    {% elsif page.footer_type == "consult" %}
+      {% include footer_2_columns.html %}
+    {% endif %}
+    {% include analytics.html %}
+
+    <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/jquery-easing.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/agency.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/charts-loader.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/global.js"></script>
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8190910.js"></script>
+    <!-- End of HubSpot Embed Code -->
+  </body>
+</html>

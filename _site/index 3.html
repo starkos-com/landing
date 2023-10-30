@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starkos</title>
+    <style>
+        /* Basic Resets */
+        body, h1, h2, h3, p, a {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Main Styles */
+        body {
+            background-color: #f9f9f9;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #2C3E50; /* Dark Blue */
+            color: #ECF0F1; /* Light Gray */
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Flow Section */
+        .flow {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .flow div {
+            background-color: #ECF0F1; /* Light Gray */
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .flow div:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Profile Section */
+        .profile {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .profile-card {
+            flex: 0 0 calc(33.33% - 20px);
+            background-color: #ECF0F1; /* Light Gray */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-card img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: #3498DB; /* Medium Blue */
+            padding: 40px 20px;
+            color: #ECF0F1; /* Light Gray */
+        }
+
+        .testimonials p {
+            font-style: italic;
+        }
+
+        .testimonials h3 {
+            margin-top: 20px;
+        }
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #2C3E50;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #ECF0F1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #3498DB;
+        }
+
+        /* Hero Slider */
+        .hero-slider {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slide {
+            width: 100%;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Project Management Section */
+        .project-management {
+            padding: 40px 0;
+            background-color: none;
+            color: black;
+            align-content: center;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+<header>
+
+    <nav>
+        <h1>Starkos</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#project-management">Services</a></li>
+            <li><a href="#profile">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Welcome to Starkos</h1>
+    <p>Leading the Future of Engineering, Procurement & Contracting</p>
+    <div class="hero-slider">
+        <div class="slide" style="background-image: url('https://www.in-tecenergy.com/wiys/plugins/ckfinder/userfiles/images/INTEC%20Intersolar%202.JPG');"></div>
+        <div class="slide" style="background-image: url('https://www.archivibe.com/wp-content/uploads/2020/11/c-dustin-91AQt9p4Mo8-unsplash-800x400.jpg');"></div>
+        <!-- Add more slides as needed --> 
+    </div>
+
+</header>
+
+<div class="container">
+      <section class="project-management">
+        <h2>Managing a Project with Starkos</h2>
+        <p>Our approach to project management is a blend of industry-best practices and our own refined strategies. We ensure that every phase, from initial planning to final execution, is meticulously carried out. With a clear focus on timelines, budgets, and stakeholder communication, we ensure your project sails smoothly towards its goals.</p>
+    </section>
+    <h2>How to Work with Us:</h2>
+    <section class="flow">
+        <div>
+            <h3>1. Consultation</h3>
+            <p>Reach out to us with your project details and requirements.</p>
+        </div>
+        <div>
+            <h3>2. Proposal</h3>
+            <p>We'll craft a tailored solution, complete with timeline and cost estimates.</p>
+        </div>
+        <div>
+            <h3>3. Execution</h3>
+            <p>Once agreed, our team begins the work to bring your vision to life.</p>
+        </div>
+    </section>
+
+    <h2>Meet the Team:</h2>
+    <section class="profile" id="profile">
+        <div class="profile-card">
+            <img src="path/to/profile1.jpg" alt="Profile 1">
+            <h3>John Doe</h3>
+            <p>Lead Engineer</p>
+        </div>
+        <div class="profile-card">
+            <img src="path/to/profile2.jpg" alt="Profile 2">
+            <h3>Jane Smith</h3>
+            <p>Procurement Specialist</p>
+        </div>
+        <div class="profile-card">
+            <img src="path/to/profile3.jpg" alt="Profile 3">
+            <h3>Mike Johnson</h3>
+            <p>Contract Manager</p>
+        </div>
+    </section>
+
+    <h2>What Our Clients Say:</h2>
+    <section class="testimonials">
+        <p>"Our partnership with Starkos ensured our project was a resounding success. On-time, on-budget, and outstanding quality."</p>
+        <h3>- Client Company Name</h3>
+    </section>
+</div>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    // Initially, show the first slide
+    slides[currentSlide].style.display = 'block';
+
+    // Next slide function
+    function nextSlide() {
+        slides[currentSlide].style.display = 'none';
+        currentSlide = (currentSlide + 1) % totalSlides;
+        slides[currentSlide].style.display = 'block';
+    }
+
+    // Previous slide function
+    function prevSlide() {
+        slides[currentSlide].style.display = 'none';
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        slides[currentSlide].style.display = 'block';
+    }
+
+    // You can bind the above functions to buttons or any other events.
+    // document.getElementById('nextBtn').addEventListener('click', nextSlide);
+    // document.getElementById('prevBtn').addEventListener('click', prevSlide);
+
+    // Optionally: Auto-switch slides every 3 seconds
+    setInterval(nextSlide, 3000);
+});
+</script>
+</body>
+</html>
