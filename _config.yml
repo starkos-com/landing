@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Incodeks
+name: Starkos
 
 # Short bio or description (displayed in the header)
-description: A Trusted, Talented, and Transparent Software Development Partner
+description: A Trusted, Talented, and Transparent Development Partner
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -30,7 +30,7 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: partini/inc-website-new
+  github: starkos-com/landing
   instagram:
   linkedin:
   pinterest:
@@ -50,7 +50,7 @@ google_analytics: UA-173215798-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://partini.github.io
+url: https://starkos-com.github.io/landing/
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
