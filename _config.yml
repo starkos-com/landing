@@ -4,7 +4,7 @@
 
 # Name of your site (displayed in the header)
 name: Starkos
-
+title: Starkos
 # Short bio or description (displayed in the header)
 description: A Trusted, Talented, and Transparent Development Partner
 
@@ -86,6 +86,7 @@ plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - webrick
+  - faraday-retry
 
 # Exclude these files from your production _site
 exclude:
